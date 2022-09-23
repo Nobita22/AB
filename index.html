@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+    <link rel="stylesheet" type="text/css" href="./snippets/index.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box" class="box" style="text-align: center;">
+
+        <!-- <span class="text-center">login</span> -->
+        <div class="input-container">
+            <input type="text" id="name" placeholder="Password" />
+            <br>
+            <!-- <label>PASSWORD</label><br> --> <br>
+            <button id="signin" type="button" onclick="signin()">submit</button>
+        </div>
+
+
+
+
+    </div>
+
+    <div id="chat">
+        <button id="signout" onclick="signout()">signout</button>
+        <div id="chat_box">
+            <div id="chat_area" class="chat_area">
+                <ul style="overflow-y: scroll;" id="messages">
+
+                </ul>
+            </div>
+
+            <!-- <div id="message_input"> -->
+            <!-- <form id="message_box" onsubmit="return sendMessage()"> -->
+            <!-- <input type="text" class="text_input" placeholder="Message..."/> -->
+            <!-- <div class="wrapper"> -->
+            <!-- <input id="message" placeholder=" Enter Message" type=" text" class="text_input"> -->
+            <!-- <input id="message_submit" value="Send" type="submit"> -->
+            <!-- </div> -->
+            <!-- </form> -->
+            <!-- </div> -->
+
+        </div>
+        <div style="bottom: 0;position: fixed;">
+            <input id="message" placeholder=" Enter Message" type=" text"><br>
+            <button id="send" type="button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceWorker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
+</body>
+<script src="index.js"></script>
+
+</html>

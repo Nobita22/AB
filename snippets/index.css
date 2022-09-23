@@ -1,0 +1,41 @@
+#chat {
+  display: none;
+  margin-bottom: 100px;
+  padding-left: 35%;
+}
+#messages {
+  list-style: none;
+  width: 500px;
+  overflow-y: scroll;
+  border: 1px solid #000;
+  margin-bottom: 110px;
+}
+#message {
+  width: 500px;
+  height: 30px;
+}
+#send {
+  margin-left: 200px;
+  width: 100px;
+  height: 80px;
+}
+#chat_area {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 600px) {
+  #chat {
+    padding-left: 10px;
+  }
+  #messages {
+    padding-left: 10px;
+    float: left;
+    width: 350px;
+    margin-top: -100px;
+  }
+  #message {
+    width: 355px;
+  }
+  #send {
+    margin-left: 130px;
+  }
+}
