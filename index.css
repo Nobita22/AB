@@ -173,8 +173,8 @@ h2 {
 }
 
 .chat_area {
- /* background-color: rgba(244, 244, 244);*/
-	background: url("IMG_20230309_221555_557.jpg");
+  background-color: rgba(244, 244, 244);
+
   /* border-radius: 25px; */
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
   overflow-y: scroll;
@@ -196,7 +196,6 @@ h2 {
 
 .chat {
   display: flex;
-	background: url("IMG_20230309_221555_557.jpg");
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -207,6 +206,7 @@ h2 {
 
 .message {
   background-color: rgba(255, 255, 255, 0.9);
+	background: url("IMG_20230309_221555_557.jpg");
   border-radius: 50px;
   box-shadow: 0px 15px 5px 0px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -255,8 +255,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
   .chat_area {
-    /*background-color: rgba(244, 244, 244);*/
-	  background: url("IMG_20230309_221555_557.jpg");
+    background-color: rgba(244, 244, 244);
     /* border-radius: 25px; */
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     overflow-y: scroll;
