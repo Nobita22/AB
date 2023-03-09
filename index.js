@@ -60,7 +60,7 @@ firebase
 
 function signin() {
   v = document.getElementById("name").value;
-  if (v == "sameer" || v == "potti") {
+  if (v == "sameer" || v == "pottipilla") {
     console.log(v);
     window.localStorage.setItem("NAME", v);
 
