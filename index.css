@@ -173,7 +173,8 @@ h2 {
 }
 
 .chat_area {
-  background-color: rgba(244, 244, 244);
+ /* background-color: rgba(244, 244, 244);*/
+	background: url("IMG_20230309_221555_557.jpg");
   /* border-radius: 25px; */
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
   overflow-y: scroll;
