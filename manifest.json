@@ -7,7 +7,7 @@
     "description": "blahblahblah",
     "icons": [
         {
-            "src": "icon.png",
+            "src": "train.jpg",
             "sizes": "200x200",
             "type": "image/png"
         }
